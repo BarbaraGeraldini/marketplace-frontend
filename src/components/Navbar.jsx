@@ -10,7 +10,7 @@ const Navbar = () => (
           fontFamily: "'Playfair Display', serif",
           fontSize: "2rem",
           letterSpacing: "2px",
-          color: "rgb(98, 190, 244)" // AQUÍ el color con comillas
+          color: "rgb(168, 202, 186)" // AQUÍ el color con comillas
         }}
       >
         🎨 Galería Creativa
