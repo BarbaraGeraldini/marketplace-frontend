@@ -4,13 +4,12 @@ const Navbar = () => (
   <nav className="navbar navbar-expand-lg navbar-dark" style={{ background: "linear-gradient(90deg, rgb(30, 21, 27) 0%, #a8caba 100%)" }}>
     <div className="container">
       <Link
-        className="navbar-brand fw-bold"
+        className="navbar-brand fw-bold custom-color"
         to="/"
         style={{
           fontFamily: "'Playfair Display', serif",
           fontSize: "2rem",
           letterSpacing: "2px",
-          color: "rgb(168, 202, 186)" // AQUÍ el color con comillas
         }}
       >
         🎨 Galería Creativa

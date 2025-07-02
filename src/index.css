@@ -87,6 +87,13 @@ button,
   letter-spacing: 2px;
   font-size: 2rem;
 }
+.navbar-brand.custom-color {
+  color: rgb(168, 202, 186) !important;
+  transition: color 0.3s;
+}
+.navbar-brand.custom-color:hover {
+  color: #fff !important; /* o el color que quieras para hover */
+}
 
 /* Responsivo y utilidad extra */
 @media (max-width: 991.98px) {
