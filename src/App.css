@@ -1,0 +1,69 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ← asegura que use toda la altura de la pantalla */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Hace que el contenedor principal ocupe toda la altura de la pantalla */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Hace que el contenido principal se expanda y empuje el footer hacia abajo si hay poco contenido */
+main.flex-grow {
+  flex-grow: 1;
+}
+
+@media (max-width: 991.98px) {
+  #navbarNav {
+    width: auto !important; /* Que no ocupe todo el ancho */
+    margin-left: auto;       /* Empujar el menú hacia la derecha */
+  }
+
+  #navbarNav .navbar-nav {
+    align-items: flex-end;  /* Alinear los botones a la derecha */
+  }
+}

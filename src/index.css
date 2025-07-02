@@ -1,0 +1,120 @@
+:root {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2d2d2d;
+  background-color: #fdf6f0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: linear-gradient(to bottom right, #fdf6f0, #f3e9e7 50%, #a8caba 100%);
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  color: #2d2d2d;
+}
+
+/* Encabezados y marca */
+h1, h2, h3, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  color: #5d4157;
+}
+
+/* Enlaces */
+a {
+  font-weight: 500;
+  color: #5d4157;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+a:hover {
+  color: #a8caba;
+}
+
+/* Botones y botones outline */
+button,
+.btn,
+.btn-outline-dark {
+  border-radius: 16px !important;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+.btn-outline-dark {
+  border-color: #5d4157 !important;
+  color: #5d4157 !important;
+  background: transparent !important;
+}
+.btn-outline-dark:hover {
+  background: #5d4157 !important;
+  color: #fff !important;
+  border-color: #5d4157 !important;
+}
+.btn-dark {
+  background: #5d4157 !important;
+  color: #fff !important;
+  border-radius: 16px !important;
+  border: none !important;
+}
+.btn-dark:hover {
+  background: #a8caba !important;
+  color: #5d4157 !important;
+  border: none !important;
+}
+
+/* Cards */
+.card {
+  box-shadow: 0 4px 24px 0 rgba(60, 40, 10, 0.07);
+  border-radius: 18px;
+  border: none;
+  background: #fff7f0;
+}
+.card-img-top {
+  object-fit: cover;
+  height: 210px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+/* Navbar (si usas Bootstrap) */
+.navbar {
+  background: linear-gradient(90deg, #5d4157 0%, #a8caba 100%) !important;
+}
+.navbar-brand {
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+/* Responsivo y utilidad extra */
+@media (max-width: 991.98px) {
+  #navbarNav {
+    width: auto !important;
+    margin-left: auto;
+  }
+  #navbarNav .navbar-nav {
+    align-items: flex-end;
+  }
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main.flex-grow {
+  flex-grow: 1;
+}
+
+/* Opcional: footer bonito */
+footer {
+  background: #5d4157;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
