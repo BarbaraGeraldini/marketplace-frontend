@@ -1,9 +1,18 @@
 import { Link } from "react-router-dom";
 
 const Navbar = () => (
-  <nav className="navbar navbar-expand-lg navbar-dark" style={{ background: "linear-gradient(90deg,rgb(30, 21, 27) 0%, #a8caba 100%)" }}>
+  <nav className="navbar navbar-expand-lg navbar-dark" style={{ background: "linear-gradient(90deg, rgb(30, 21, 27) 0%, #a8caba 100%)" }}>
     <div className="container">
-      <Link className="navbar-brand fw-bold" to="/" style={{ fontFamily: "'Playfair Display', serif", fontSize: "2rem", letterSpacing: "2px", color: rgb(98, 190, 244)) }}>
+      <Link
+        className="navbar-brand fw-bold"
+        to="/"
+        style={{
+          fontFamily: "'Playfair Display', serif",
+          fontSize: "2rem",
+          letterSpacing: "2px",
+          color: "rgb(98, 190, 244)" // AQUÍ el color con comillas
+        }}
+      >
         🎨 Galería Creativa
       </Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
