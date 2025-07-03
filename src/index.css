@@ -24,7 +24,7 @@ h1, h2, h3, .navbar-brand {
   color: #5d4157;
 }
 
-/* Enlaces */
+/* Enlaces generales */
 a {
   font-weight: 500;
   color: #5d4157;
@@ -94,6 +94,23 @@ button,
 .navbar-brand.custom-color:hover {
   color: #fff !important; /* o el color que quieras para hover */
 }
+
+/* ===== HOVER PERSONALIZADO PARA LINKS DEL NAVBAR ===== */
+.navbar .nav-link {
+  color: #e6e6e6 !important;              /* color claro por defecto */
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.18s, background 0.2s;
+  border-radius: 8px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #5d4157 !important;             /* color más oscuro del degradé */
+  background: #a8caba22;                 /* sutil fondo, opcional */
+}
+
+/* ===== FIN DEL HOVER PERSONALIZADO ===== */
 
 /* Responsivo y utilidad extra */
 @media (max-width: 991.98px) {
